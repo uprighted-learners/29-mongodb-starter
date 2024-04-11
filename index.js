@@ -36,7 +36,6 @@ const learnersSchema = new mongoose.Schema({
 // create a mongoose model for the user data
 const Learners = mongoose.model('learners', learnersSchema);
 
-// set up a route to GET all the user data
 // GET - /api/learners - get all learners
 app.get("/api/learners", async (req, res) => {
     try {
